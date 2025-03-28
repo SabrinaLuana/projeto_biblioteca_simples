@@ -1,0 +1,14 @@
+CREATE DATABASE biblioteca_virtual;
+
+USE biblioteca_virtual;
+
+CREATE TABLE livros (
+    id INT AUTO_INCREMENT PRIMARY KEY,
+    titulo VARCHAR(100) NOT NULL,
+    autor VARCHAR(100) NOT NULL,
+    ano_publicacao INT,
+    genero VARCHAR(50),
+    descricao TEXT,
+    imagem_capa VARCHAR(100),
+    data_cadastro TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);
